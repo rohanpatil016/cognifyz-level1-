@@ -1,66 +1,47 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>JavaScript Task</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <h2>My Website</h2>
+    <h1>JavaScript Practice</h1>
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Task 1: Change Button Color -->
+    <section>
+        <h2>1. Change Button Color</h2>
 
-    <!-- Home Section -->
-    <section id="home">
-
-        <h1>Welcome to My Website</h1>
-
-        <p>
-            Hello! Welcome to my first webpage.
-            I created this website using HTML and CSS.
-            I am learning web development and enjoying
-            creating new things.
-        </p>
-
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
-             alt="Laptop on a desk">
-
+        <button id="colorBtn" onclick="changeColor()">
+            Click Me
+        </button>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Task 2: Greeting Message -->
+    <section>
+        <h2>2. Greeting Message</h2>
 
-        <h2>About Me</h2>
-
-        <p>
-            I am a student interested in technology
-            and web development. This is my first
-            project for the Cognifyz internship.
-        </p>
-
+        <button onclick="showGreeting()">
+            Show Greeting
+        </button>
     </section>
 
-    <!-- Contact Form -->
-    <section id="contact">
+    <!-- Task 3: Simple Calculator -->
+    <section>
+        <h2>3. Simple Calculator</h2>
 
-        <h2>Contact Me</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
 
-        <form>
-            <input type="text" placeholder="Enter your name" required>
-            <button type="submit">Submit</button>
-        </form>
+        <input type="number" id="num2" placeholder="Enter second number">
 
+        <button onclick="addNumbers()">Add Numbers</button>
+
+        <h3 id="result">Result will appear here</h3>
     </section>
 
-    <footer>
-        <p>Thank you for visiting my website!</p>
-    </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
